@@ -24,17 +24,17 @@ function App() {
         <main>
           <Routes>
             <Route exact path="/corporate" element={<AppHero />} />
-            <Route path="/corporate/about/" element={<AppAbout />} />
-            <Route path="/corporate/services/" element={<AppServices />} />
-            <Route path="/corporate/works/" element={<AppWorks />} />
-            <Route path="/corporate/teams/" element={<AppTeams />} />
+            <Route path="/corporate/about" element={<AppAbout />} />
+            <Route path="/corporate/services" element={<AppServices />} />
+            <Route path="/corporate/works" element={<AppWorks />} />
+            <Route path="/corporate/teams" element={<AppTeams />} />
             <Route
-              path="/corporate/testimonials/"
+              path="/corporate/testimonials"
               element={<AppTestimonials />}
             />
-            <Route path="/corporate/pricing/" element={<AppPricing />} />
-            <Route path="/corporate/blog/" element={<AppBlog />} />
-            <Route path="/corporate/contact/" element={<AppContact />} />
+            <Route path="/corporate/pricing" element={<AppPricing />} />
+            <Route path="/corporate/blog" element={<AppBlog />} />
+            <Route path="/corporate/contact" element={<AppContact />} />
             <Route path="*" element={<h1>Page not found</h1>} />
           </Routes>
         </main>
