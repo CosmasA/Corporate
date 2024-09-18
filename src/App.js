@@ -15,31 +15,27 @@ import AppContact from "./components/contact";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <header id="header">
-          <AppHeader />
-        </header>
+    <div className="App">
+      <header id="header">
+        <AppHeader />
+      </header>
 
-        <main>
-          <Routes>
-            <Route path="/" element={<AppHero />} />
-            <Route path="/about" element={<AppAbout />} />
-            <Route path="/services" element={<AppServices />} />
-            <Route path="/works" element={<AppWorks />} />
-            <Route path="/teams" element={<AppTeams />} />
-            <Route path="/testimonials" element={<AppTestimonials />} />
-            <Route path="/pricing" element={<AppPricing />} />
-            <Route path="/blog" element={<AppBlog />} />
-            <Route path="/contact" element={<AppContact />} />
-          </Routes>
-        </main>
+      <main>
+        <AppHero />
+        <AppAbout />
+        <AppServices />
+        <AppWorks />
+        <AppTeams />
+        <AppTestimonials />
+        <AppPricing />
+        <AppBlog />
+        <AppContact />
+      </main>
 
-        <footer id="footer">
-          <AppFooter />
-        </footer>
-      </div>
-    </Router>
+      <footer id="footer">
+        <AppFooter />
+      </footer>
+    </div>
   );
 }
 
